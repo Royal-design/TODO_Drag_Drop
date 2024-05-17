@@ -1,0 +1,11 @@
+.drop-area {
+  padding: 0.5rem;
+  margin: 2rem 0;
+  columns: red;
+  border: 1px dashed rgb(234, 231, 231);
+  height: 5rem;
+  transition: all 0.4s ease-in-out;
+}
+.drop-hide {
+  opacity: 0;
+}

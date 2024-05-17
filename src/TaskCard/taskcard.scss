@@ -1,0 +1,13 @@
+.btn-remove {
+  transition: all 0.4s;
+  &:active {
+    transform: translateX(-2px);
+  }
+}
+.task-card {
+  cursor: grab;
+  &:active {
+    opacity: 0.7;
+    border: 1px solid black;
+  }
+}
