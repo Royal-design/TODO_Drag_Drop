@@ -47,13 +47,11 @@ export const TaskColumn = ({
     console.log(taskToMove);
 
     const updatedTasks = state.filter((_, index) => index !== activeCard);
-    console.log(updatedTasks);
 
     updatedTasks.splice(position, 0, {
       ...taskToMove,
       status
     });
-    console.log(updatedTasks);
     localStorage.setItem("updateItem", JSON.stringify(updatedTasks));
 
     setState(updatedTasks);
