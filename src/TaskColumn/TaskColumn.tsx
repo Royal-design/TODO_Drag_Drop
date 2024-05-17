@@ -31,7 +31,7 @@ export const TaskColumn = ({
   activeCard
 }: StateType) => {
   const handleDelete = (id: any) => {
-    const newState = state.filter((item, index) => index !== id);
+    const newState = state.filter((_, index) => index !== id);
 
     localStorage.setItem("updateItem", JSON.stringify(newState));
     setState(newState);
