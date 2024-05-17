@@ -54,6 +54,7 @@ export const TaskColumn = ({
       status
     });
     console.log(updatedTasks);
+    localStorage.setItem("updateItem", JSON.stringify(updatedTasks));
 
     setState(updatedTasks);
   };
